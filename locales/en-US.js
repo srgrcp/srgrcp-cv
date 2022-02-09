@@ -9,16 +9,33 @@ export default {
 
   workExperience: [
     {
-      position: 'Full-stack developer',
-      company: 'Redsis - Redes y Sistemas Integrados S.A.S.',
-      time: 'January 2020 - November 2020 (11 months)',
-      description: 'Development of private inventory management platform, with the goal of optimizing the management of inventories, improving the productivity of users.',
+      position: 'Full-stack Senior developer',
+      company: 'Double V Partners',
+      time: 'October 2021 - November 2021 (2 months)',
+      description: 'Development of multiple projects using microservices, serverless, server side rendering(SSR), static site generation(SSR), among others.',
       stack: [
-        'Angular',
-        'SASS (Bulma.io)',
-        '.Net Framework',
+        'Go',
+        '.Net Core',
         'MySQL',
-        'WebSockets',
+        'MongoDB',
+        'Docker',
+        'Angular',
+        'GraphQL',
+      ]
+    },
+    {
+      position: 'Full-stack Semi Senior developer',
+      company: 'Double V Partners',
+      time: 'March 2021 - September 2021 (7 months)',
+      description: '',
+      stack: [
+        'Go',
+        '.Net Core',
+        'MySQL',
+        'MongoDB',
+        'Docker',
+        'Angular',
+        'GraphQL',
       ]
     },
     {
@@ -34,6 +51,19 @@ export default {
         'Docker',
         'Nodejs',
         'socket.io',
+      ]
+    },
+    {
+      position: 'Full-stack developer',
+      company: 'Redsis - Redes y Sistemas Integrados S.A.S.',
+      time: 'January 2020 - November 2020 (11 months)',
+      description: 'Development of private inventory management platform, with the goal of optimizing the management of inventories, improving the productivity of users.',
+      stack: [
+        'Angular',
+        'SASS (Bulma.io)',
+        '.Net Framework',
+        'MySQL',
+        'WebSockets',
       ]
     },
   ]
