@@ -53,6 +53,7 @@ export default {
       'IBM+Plex+Serif': [400, 600],
     },
     preload: true,
+    display: 'swap',
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
