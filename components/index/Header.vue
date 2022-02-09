@@ -1,5 +1,5 @@
 <template>
-  <Section>
+  <Section class="no-print">
     <div class="flex justify-between pb-4">
       <div>
         <a class="link" href="https://github.com/srgrcp/srgrcp-cv">Github</a>
@@ -35,5 +35,13 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 .link {
   @apply text-blue-800 hover:text-blue-600 underline hover:no-underline;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none!important;
+    }
 }
 </style>
