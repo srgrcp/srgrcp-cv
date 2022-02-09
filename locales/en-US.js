@@ -66,5 +66,23 @@ export default {
         'WebSockets',
       ]
     },
+  ],
+
+  referencesTitle: 'References',
+  references: [
+    {
+      name: 'José Triviño',
+      position: 'Import auxiliary',
+      company: 'Botero Soto',
+      phone: '+57 318 633 8882',
+      email: 'josetf1995@gmail.com',
+    },
+    {
+      name: 'Keneth Ortega',
+      position: 'Front-end Developer',
+      company: 'Perficient',
+      phone: '+57 300 530 6816',
+      email: 'kenlallemand@gmail.com',
+    },
   ]
 }

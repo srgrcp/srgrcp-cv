@@ -7,5 +7,7 @@
     <Description />
 
     <WorkExperience />
+
+    <References />
   </div>
 </template>
