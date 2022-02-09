@@ -8,6 +8,8 @@
 
     <WorkExperience />
 
+    <Education />
+
     <References />
   </div>
 </template>

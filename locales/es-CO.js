@@ -73,7 +73,7 @@ export default {
     {
       name: 'José Triviño',
       position: 'Auxiliar de importaciones',
-      company: 'Botero Soto',
+      company: 'Botero Soto, Soluciones Logísticas',
       phone: '+57 318 633 8882',
       email: 'josetf1995@gmail.com',
     },
@@ -83,6 +83,20 @@ export default {
       company: 'Perficient',
       phone: '+57 300 530 6816',
       email: 'kenlallemand@gmail.com',
+    },
+  ],
+
+  educationTitle: 'Educación',
+  education: [
+    {
+      school: 'Universidad del Norte',
+      time: 'Enero 2015 - Junio 2019',
+      career: 'Ingeniería en Sistemas y Computación',
+    },
+    {
+      school: 'I.E.D. San José',
+      time: 'Dicimbre 2014',
+      career: 'Bachillerato',
     },
   ]
 }
