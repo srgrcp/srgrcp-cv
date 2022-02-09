@@ -75,8 +75,8 @@ export default {
   // https://i18n.nuxtjs.org/basic-usage
   i18n: {
     locales: [
-      { code: 'en', iso: 'en-US', file: 'en-US.js' },
-      { code: 'es', iso: 'es-CO', file: 'es-CO.js' },
+      { code: 'en', name: 'English', iso: 'en-US', file: 'en-US.js' },
+      { code: 'es', name: 'Español', iso: 'es-CO', file: 'es-CO.js' },
     ],
     defaultLocale: 'en',
     fallbackLocale: 'en',
