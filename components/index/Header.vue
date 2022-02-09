@@ -1,6 +1,6 @@
 <template>
   <Section>
-    <div class="flex justify-between">
+    <div class="flex justify-between pb-4">
       <div>
         <a class="link" href="https://github.com/srgrcp/srgrcp-cv">Github</a>
       </div>
@@ -32,7 +32,7 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .link {
   @apply text-blue-800 hover:text-blue-600 underline hover:no-underline;
 }

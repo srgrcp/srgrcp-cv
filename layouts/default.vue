@@ -98,7 +98,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@400;600&display=swap');
-</style>

@@ -38,10 +38,21 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://google-fonts.nuxtjs.org/setup
+    '@nuxtjs/google-fonts',
   ],
 
   tailwindcss: {
     configPath: '~/config/tailwind.js',
+  },
+
+  googleFonts: {
+    families: {
+      'IBM+Plex+Mono': [400, 600],
+      'IBM+Plex+Sans': [400, 600],
+      'IBM+Plex+Serif': [400, 600],
+    },
+    preload: true,
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
