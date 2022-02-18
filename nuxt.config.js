@@ -48,8 +48,8 @@ export default {
 
   googleFonts: {
     families: {
-      'IBM+Plex+Mono': [400, 600],
-      'IBM+Plex+Sans': [400, 600],
+      'Roboto+Mono': [400, 600],
+      'Roboto': [400, 600],
       'IBM+Plex+Serif': [400, 600],
     },
     preload: true,

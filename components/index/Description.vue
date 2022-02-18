@@ -1,7 +1,7 @@
 <template>
   <Section>
     <p>
-      {{ $t("appDescription") }}
+      {{ $t("resume.description") }}
     </p>
   </Section>
 </template>

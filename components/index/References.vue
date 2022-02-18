@@ -1,10 +1,10 @@
 <template>
   <Section>
     <SectionTitle>
-      {{ $t("referencesTitle") }}
+      {{ $t("resume.referencesTitle") }}
     </SectionTitle>
 
-    <Section v-for="(reference, i) in $t(`references`)" :key="i">
+    <Section v-for="(reference, i) in $t(`resume.references`)" :key="i">
       <h3 class="font-semibold">
         {{ reference.name }}, {{ reference.position }} - {{ reference.company }}
       </h3>
