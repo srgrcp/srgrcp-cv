@@ -6,6 +6,13 @@ export default {
     language: 'Language',
     logoAlt: 'Sergio Carrillo\'s logo',
     underConstruction: 'Under Construction',
+    pageNotFound: 'Page not found',
+    url: 'https://srgrcp.cf',
+    tableOfContents: 'Table of contents',
+  },
+  blog: {
+    title: 'Blog',
+    lastArticles: 'Last articles',
   },
   resume: {
     title: 'Sergio Carrillo\'s Curriculum Vitae.',

@@ -5,5 +5,8 @@ module.exports = {
       serif: ['IBM Plex Serif', 'serif'],
       mono: ['Roboto Mono', 'monospace'],
     },
-  }
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 }

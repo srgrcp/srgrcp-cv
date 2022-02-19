@@ -1,7 +1,7 @@
 <template>
   <div class="w-full border-b border-slate-800">
     <div class="container mx-auto flex justify-center">
-      <nuxt-link class="nav-item" :to="localePath('blog')">
+      <nuxt-link class="nav-item uppercase text-sm" :to="localePath('blog')">
         <span>
           {{ $t('app.blog') }}
         </span>
@@ -11,7 +11,7 @@
         <img class="w-24 h-24 transition ease-in-out delay-75 group-hover:scale-110" src="/icon.png" :alt="$t('app.logoAlt')">
       </nuxt-link>
       
-      <nuxt-link class="nav-item" :to="localePath('resume')">
+      <nuxt-link class="nav-item uppercase text-sm" :to="localePath('resume')">
         <span>
           {{ $t('app.resume') }}
         </span>

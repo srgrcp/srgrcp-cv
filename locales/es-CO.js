@@ -6,6 +6,13 @@ export default {
     language: 'Idioma',
     logoAlt: 'Logo Sergio Carrillo',
     underConstruction: 'En Construcción',
+    pageNotFound: 'Página no encontrada',
+    url: 'https://srgrcp.cf',
+    tableOfContents: 'Tabla de contenidos',
+  },
+  blog: {
+    title: 'Blog',
+    lastArticles: 'Últimos artículos',
   },
   resume: {
     title: 'Hoja de Vida de Sergio Carrillo.',

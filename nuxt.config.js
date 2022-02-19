@@ -84,6 +84,24 @@ export default {
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
+  // https://content.nuxtjs.org/advanced#static-site-generation
+  generate: {
+    async routes () {
+      const { $content } = require('@nuxt/content')
+
+      const esFiles = await $content('blog', { deep: true }).where({ dir: '/blog/es' }).only(['slug']).fetch()
+      const enFiles = await $content('blog', { deep: true }).where({ dir: '/blog/en' }).only(['slug']).fetch()
+      console.log(enFiles)
+
+      const routes = [
+        ...esFiles.map(file => `/es/blog/${file.slug}`),
+        ...enFiles.map(file => `/en/blog/${file.slug}`),
+      ]
+
+      return routes
+    }
+  },
+
   // https://i18n.nuxtjs.org/basic-usage
   i18n: {
     locales: [
