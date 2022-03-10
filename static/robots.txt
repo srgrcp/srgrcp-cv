@@ -1,6 +1,5 @@
 User-agent: *
-Allow: /es*
-Allow: /en*
+Allow: *
 
 Sitemap: https://srgrcp.cf/sitemap.xml
 Sitemap: https://srgrcp.cf/sitemap.es.xml
