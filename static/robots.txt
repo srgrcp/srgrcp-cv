@@ -3,3 +3,5 @@ Allow: /es*
 Allow: /en*
 
 Sitemap: https://srgrcp.cf/sitemap.xml
+Sitemap: https://srgrcp.cf/sitemap.es.xml
+Sitemap: https://srgrcp.cf/sitemap.en.xml
