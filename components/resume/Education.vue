@@ -8,7 +8,7 @@
       <h3 class="font-semibold">
         {{ education.school }}
       </h3>
-      <p class="text-gray-500 text-sm">
+      <p class="text-gray-500 dark:text-stone-400 text-sm">
         {{ education.time }}
       </p>
       <p>

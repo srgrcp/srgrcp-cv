@@ -9,7 +9,7 @@
         {{ reference.name }}, {{ reference.position }} - {{ reference.company }}
       </h3>
       <a class="underline" :href="`mailto:${reference.email}`"> {{ reference.email }} </a>
-      <p class="text-gray-500 text-sm"> {{ reference.phone }} </p>
+      <p class="text-gray-500 dark:text-stone-400 text-sm"> {{ reference.phone }} </p>
     </Section>
   </Section>
 </template>

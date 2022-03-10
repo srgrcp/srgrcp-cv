@@ -13,6 +13,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+
 export default Vue.extend({
   async asyncData({ app, $content}) {
     const articles = await $content('blog', app.i18n.locale)

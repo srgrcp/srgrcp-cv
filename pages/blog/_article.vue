@@ -1,11 +1,18 @@
 <template>
   <article
       class="
-        prose prose-lg prose-stone mx-auto
-        prose-a:text-blue-600 hover:prose-a:text-blue-400
+        prose prose-lg prose-gray mx-auto dark:text-stone-200
+        prose-a:no-underline hover:prose-a:underline
+        prose-a:text-blue-600 dark:prose-a:text-blue-500 dark:prose-invert
+        dark:prose-pre:text-stone-200 dark:prose-code:text-stone-200 dark:prose-pre:!bg-stone-800
       ">
     <h1 class="font-semibold text-3xl">{{ article.title }}</h1>
-    <p class="text-slate-500 my-3">{{ formatDate(article.createdAt) }}</p>
+    <p class="text-stone-500 dark:text-slate-400 my-3 flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex !mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+      {{ formatDate(article.createdAt) }}
+    </p>
     <div class="aspect-video rounded-lg shadow-lg w-full overflow-hidden flex justify-center items-center">
       <img class="object-cover min-h-full min-w-full" :src="article.image" :alt="article.title">
     </div>
@@ -140,3 +147,20 @@ export default Vue.extend<Data, Methods, Computed, Props>({
   },
 })
 </script>
+
+<style lang="postcss">
+.dark code {
+  text-shadow: 0 1px #444!important;
+}
+.dark .token.operator {
+  color: #E7E5E4;
+  background: inherit!important;
+}
+.dark pre[class*="language-"]::selection,
+.dark pre[class*="language-"] ::selection,
+.dark code[class*="language-"]::selection,
+.dark code[class*="language-"] ::selection {
+  background: #afafaf!important;
+  text-shadow: 0 1px #222!important;
+}
+</style>
