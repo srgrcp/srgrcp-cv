@@ -10,8 +10,8 @@ export default {
   resume: {
     title: 'Sergio Carrillo\'s Curriculum Vitae.',
     description: 'Sergio Carrillo\'s curriculum vitae; Full-stack developer with experience in developing web applications, implementing technologies like Angular, React, Vue, Go, Nodejs, among others.',
-    image: 'https://srgrcp.cf/bg.jpg',
-    url: 'https://srgrcp.cf',
+    image: 'https://scarrillo.me/bg.jpg',
+    url: 'https://scarrillo.me',
   
     SergiosPosition: 'Full-stack developer',
     workExperienceTitle: 'Work Experience',

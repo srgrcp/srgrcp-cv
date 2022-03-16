@@ -1,6 +1,6 @@
 User-agent: *
-Allow: *
+Allow: /
 
-Sitemap: https://srgrcp.cf/sitemap.xml
-Sitemap: https://srgrcp.cf/sitemap.es.xml
-Sitemap: https://srgrcp.cf/sitemap.en.xml
+Sitemap: https://scarrillo.me/sitemap.xml
+Sitemap: https://scarrillo.me/sitemap.es.xml
+Sitemap: https://scarrillo.me/sitemap.en.xml

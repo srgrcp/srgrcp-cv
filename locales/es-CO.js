@@ -10,8 +10,8 @@ export default {
   resume: {
     title: 'Hoja de Vida de Sergio Carrillo.',
     description: 'Hoja de vida de Sergio Carrillo; Desarrollador full-stack, con experiencia en desarrollo de aplicaciones web, implementando tecnologías como Angular, React, Vue, Go, Nodejs, entre otros.',
-    image: 'https://srgrcp.cf/bg.jpg',
-    url: 'https://srgrcp.cf',
+    image: 'https://scarrillo.me/bg.jpg',
+    url: 'https://scarrillo.me',
   
     SergiosPosition: 'Desarrollador Full-stack',
     workExperienceTitle: 'Experiencia Laboral',
