@@ -59,7 +59,7 @@ pipeline {
 
   post {
     always {
-      discordSend description: "Leeroy Jenkins", title: "${JOB_NAME}${BUILD_DISPLAY_NAME}", link: env.BUILD_URL, webhookURL: 'https://discord.com/api/webhooks/1188324781448245348/W4otbyV52WKhfip3IVciIrWZFmaxdINlM5O4ts7OM8MWHKLjgdWwXNqiJrMVYAeOGaT5'
+      discordSend description: "Leeroy Jenkins", title: "${JOB_NAME}${BUILD_DISPLAY_NAME}", link: env.BUILD_URL, webhookURL: env.DISCORD_WEBHOOK
     }
   }
 }
