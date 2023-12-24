@@ -18,7 +18,7 @@ pipeline {
         script {
           def scannerHome = tool 'sonarscanner4.7'
           withSonarQubeEnv('SonarQube') {
-            sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=srgrcp-cv -Dsonar.projectName=srgrcp-cv -Dsonar.login=sqa_e9873cbffcbb6e40b42e779a628e8d3f5352e2e1"
+            sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=srgrcp-cv -Dsonar.projectName=srgrcp-cv"
           }
         }
       }
