@@ -54,18 +54,26 @@ pipeline {
       }
     }
 
+    stage('Get environment') {
+      steps {
+        script {
+          switch(env.GIT_BRANCH) {
+            case 'master':
+              buildEnv = 'prod'
+            break
+            default:
+              buildEnv = 'dev'
+            break
+          }
+          sh "echo $GIT_BRANCH"
+        }
+      }
+    }
+
     stage('Deploy To k8s') {
       agent { label 'KOPS' }
         steps {
           script {
-            switch(env.GIT_BRANCH) {
-              case 'master':
-                buildEnv = 'prod'
-              break
-              default:
-                buildEnv = 'dev'
-              break
-            }
             sh "helm upgrade --install --force srgrcp-cv-helm helm/srgrcp-cv-charts --set-json='image.tag=\"$BUILD_NUMBER\"' --namespace $buildEnv"
           }
         }
