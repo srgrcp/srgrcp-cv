@@ -58,14 +58,13 @@ pipeline {
       steps {
         script {
           switch(env.GIT_BRANCH) {
-            case 'master':
+            case 'origin/master':
               buildEnv = 'prod'
             break
             default:
               buildEnv = 'dev'
             break
           }
-          sh "echo $GIT_BRANCH"
         }
       }
     }
