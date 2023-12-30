@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "srgrcp-cv-charts.fullname" . }}
+  labels:
+    {{- include "srgrcp-cv-charts.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "srgrcp-cv-charts.selectorLabels" . | nindent 4 }}

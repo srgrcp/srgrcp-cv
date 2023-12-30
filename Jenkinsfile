@@ -48,12 +48,27 @@ pipeline {
       }
     }
 
-    stage('Deploy To ECS') {
+    stage('Remove local docker image') {
       steps {
-        withAWS(credentials: 'aws-jenkins', region: 'us-east-1') {
-          sh "aws ecs update-service --cluster ${cluster} --service ${service} --force-new-deployment"
-        }
+        sh "docker rmi $appRegistry:$BUILD_NUMBER"
       }
+    }
+
+    stage('Deploy To k8s') {
+      agent { label 'KOPS' }
+        steps {
+          script {
+            switch(env.GIT_BRANCH) {
+              case 'master':
+                buildEnv = 'prod'
+              break
+              default:
+                buildEnv = 'dev'
+              break
+            }
+            sh "helm upgrade --install --force srgrcp-cv-helm helm/srgrcp-cv-charts --set-json='image.tag=\"$BUILD_NUMBER\"' --namespace $buildEnv"
+          }
+        }
     }
   }
 
